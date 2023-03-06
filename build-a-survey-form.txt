@@ -1,0 +1,130 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <section>
+    <div class="ul">
+  <h1 id="title">CSGO or VALORANT</h1>
+  <body>
+    <p id="description">Please fill out the form below to help us gather data</p>
+    <form id="survey-form">
+      <div class="name">
+      <label id="name-label">
+        Name
+      <div>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      </label>
+      <div class="email">
+      <label id="email-label">
+        Email
+      </div>
+      <input id="email" type="email" placeholder="Enter your email" required></label>
+      <div class="hours">
+      <label id="number-label">How many hours have you played CSGO?<input id="number" type="number" placeholder="Enter your hours" min="1" max="999999" required>
+      </div>
+      </label><div class="valorantnumber">
+       <label id="valorantnumber-label">How many hours have you played VALORANT?</div><input id="valorantnumber" type="number" placeholder="Enter your hours" min="1" max="999999" required>
+      </label>
+      </div>
+      <div class="dropdown">
+      <label>Which game do you prefer?
+        </div>
+      <select id="dropdown">
+        <option>Select one</option>
+        <option>CSGO</option>
+        <option>VALORANT</option>
+      </select>
+      </label>
+      <div class="play-activity">
+      <label>Do you actively play both games?
+       </div>
+       <div class="yes-no">
+        <input name="yes-no" value="yes" type="radio">Yes
+      </label>
+      <label>
+        <input name="yes-no" type="radio" value="no">No
+      </label>
+      </div>
+      <div class="recommend">
+      <label>
+        Would you recommend these games to anyone?
+        </div>
+        <div class="checkbox">
+        <input type="checkbox" name="csgo" value="csgo">CSGO<input type="checkbox" name="valorant" value="valorant">VALORANT
+      </label>
+      </div>
+      <div class="comments">
+      <label for="comments">Any comments?
+      </div>
+      <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter comments here">
+      </textarea>
+      </div>
+      <div class="submit">
+      <label>
+        <input id="submit" type="submit" value="submit">
+      </label>
+    </form>
+    </section>
+  </body>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  color: white;
+  padding: 20px;
+  font-family: sans-serif;
+  background-image: url(https://images.cgames.de/images/gamestar/290/valorant-vs-csgo_6102384.jpg);
+}
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.ul {
+  background-color: #00001a;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.hours {
+  margin-bottom: 25px;
+  margin-top: 25px
+} 
+
+input[type="number"], input[type="email"], input[type="text"],input[type="textarea"], select[id="dropdown"] {
+  width: 100%;
+}
+
+div[class="email"], div[class="yes-no"], div[class="recommend"], div[class="play-activity"], div[class="checkbox"] {
+  margin-top: 10px;
+}
+
+div[class="hours"], div[class="dropdown"], div[class="comments"], div[class="submit"]  {
+  margin-top: 38px
+}
+
+div[class="valorantnumber"] {
+  margin-top: -15px;
+}
+
+
+
+** end of undefined **
+
